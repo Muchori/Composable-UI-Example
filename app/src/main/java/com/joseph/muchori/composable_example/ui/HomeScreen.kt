@@ -1,4 +1,4 @@
-@file:Suppress("PackageNaming")
+@file:Suppress("PackageNaming", "MagicNumber", "LongParameterList", "LongMethod", "NewLineAtEndOfFile", "WildcardImport")
 package com.joseph.muchori.composable_example.ui
 
 import androidx.compose.foundation.Canvas
