@@ -1,3 +1,4 @@
+@file:Suppress("PackageNaming", "NewLineAtEndOfFile")
 package com.joseph.muchori.composable_example.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape

@@ -1,10 +1,22 @@
+@file:Suppress("MaxLineLength", "PackageNaming", "MagicNumber", "LongParameterList", "LongMethod", "NewLineAtEndOfFile", "WildcardImport")
 package com.joseph.muchori.composable_example.ui
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.GridCells
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.LazyVerticalGrid
@@ -14,10 +26,10 @@ import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -32,7 +44,24 @@ import com.joseph.muchori.composable_example.BottomMenuContent
 import com.joseph.muchori.composable_example.Feature
 import com.joseph.muchori.composable_example.R
 import com.joseph.muchori.composable_example.standardQuadFromTo
-import com.joseph.muchori.composable_example.ui.theme.*
+import com.joseph.muchori.composable_example.ui.theme.AquaBlue
+import com.joseph.muchori.composable_example.ui.theme.Beige1
+import com.joseph.muchori.composable_example.ui.theme.Beige2
+import com.joseph.muchori.composable_example.ui.theme.Beige3
+import com.joseph.muchori.composable_example.ui.theme.BlueViolet1
+import com.joseph.muchori.composable_example.ui.theme.BlueViolet2
+import com.joseph.muchori.composable_example.ui.theme.BlueViolet3
+import com.joseph.muchori.composable_example.ui.theme.ButtonBlue
+import com.joseph.muchori.composable_example.ui.theme.DarkerButtonBlue
+import com.joseph.muchori.composable_example.ui.theme.DeepBlue
+import com.joseph.muchori.composable_example.ui.theme.LightGreen1
+import com.joseph.muchori.composable_example.ui.theme.LightGreen2
+import com.joseph.muchori.composable_example.ui.theme.LightGreen3
+import com.joseph.muchori.composable_example.ui.theme.LightRed
+import com.joseph.muchori.composable_example.ui.theme.OrangeYellow1
+import com.joseph.muchori.composable_example.ui.theme.OrangeYellow2
+import com.joseph.muchori.composable_example.ui.theme.OrangeYellow3
+import com.joseph.muchori.composable_example.ui.theme.TextWhite
 
 @ExperimentalFoundationApi
 @Composable
@@ -107,13 +136,16 @@ fun HomeScreen() {
                 )
             )
         }
-        BottomMenu(items = listOf(
-            BottomMenuContent("Home", R.drawable.ic_home),
-            BottomMenuContent("Meditate", R.drawable.ic_bubble),
-            BottomMenuContent("Sleep", R.drawable.ic_moon),
-            BottomMenuContent("Music", R.drawable.ic_music),
-            BottomMenuContent("Profile", R.drawable.ic_profile),
-        ), modifier = Modifier.align(Alignment.BottomCenter))
+        BottomMenu(
+            items = listOf(
+                BottomMenuContent("Home", R.drawable.ic_home),
+                BottomMenuContent("Meditate", R.drawable.ic_bubble),
+                BottomMenuContent("Sleep", R.drawable.ic_moon),
+                BottomMenuContent("Music", R.drawable.ic_music),
+                BottomMenuContent("Profile", R.drawable.ic_profile),
+            ),
+            modifier = Modifier.align(Alignment.BottomCenter)
+        )
     }
 }
 
@@ -183,7 +215,7 @@ fun BottomMenuItem(
         }
         Text(
             text = item.title,
-            color = if(isSelected) activeTextColor else inactiveTextColor
+            color = if (isSelected) activeTextColor else inactiveTextColor
         )
     }
 }

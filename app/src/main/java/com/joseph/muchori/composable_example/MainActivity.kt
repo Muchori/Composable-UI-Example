@@ -1,3 +1,4 @@
+@file:Suppress("PackageNaming")
 package com.joseph.muchori.composable_example
 
 import android.os.Bundle
@@ -14,7 +15,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Composable_ExampleTheme {
                 // A surface container using the 'background' color from the theme
-               HomeScreen()
+                HomeScreen()
             }
         }
     }

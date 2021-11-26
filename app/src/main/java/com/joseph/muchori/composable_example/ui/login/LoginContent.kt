@@ -1,3 +1,4 @@
+@file:Suppress("PackageNaming", "NewLineAtEndOfFile", "UnusedPrivateMember")
 package com.joseph.muchori.composable_example.ui.login
 
 import android.content.res.Configuration
@@ -11,7 +12,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.joseph.muchori.composable_example.ui.theme.Composable_ExampleTheme
-
 
 /**
  * This composable maintains the entire screen for handling user login
@@ -48,13 +48,13 @@ fun LoginContent(
 
 @Composable
 
-private fun EmptyLoginContentPreview(){
+private fun EmptyLoginContentPreview() {
 
     val viewState = LoginViewState(
         email = "",
         password = ""
     )
     Composable_ExampleTheme {
-        LoginContent(viewState )
+        LoginContent(viewState)
     }
 }
