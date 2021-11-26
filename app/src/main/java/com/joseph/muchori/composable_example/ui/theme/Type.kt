@@ -1,7 +1,6 @@
 @file:Suppress("PackageNaming", "NewLineAtEndOfFile")
 package com.joseph.muchori.composable_example.ui.theme
 
-
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font

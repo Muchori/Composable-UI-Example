@@ -1,7 +1,6 @@
 @file:Suppress("PackageNaming")
 package com.joseph.muchori.composable_example.ui.login
 
-
 /**
  *This defines the state of the login screen.
  *
