@@ -1,3 +1,4 @@
+@file:Suppress("NewLineAtEndOfFile")
 package com.joseph.muchori.composable_example
 
 import org.junit.Assert.assertEquals

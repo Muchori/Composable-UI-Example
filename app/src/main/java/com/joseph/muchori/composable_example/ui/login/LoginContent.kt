@@ -1,4 +1,4 @@
-@file:Suppress("PackageNaming")
+@file:Suppress("PackageNaming", "NewLineAtEndOfFile", "UnusedPrivateMember")
 package com.joseph.muchori.composable_example.ui.login
 
 import android.content.res.Configuration

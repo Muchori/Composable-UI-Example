@@ -1,4 +1,4 @@
-@file:Suppress("PackageNaming")
+@file:Suppress("PackageNaming", "UnusedPrivateMember")
 package com.joseph.muchori.composable_example.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme

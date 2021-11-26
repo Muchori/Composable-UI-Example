@@ -1,4 +1,4 @@
-@file:Suppress("PackageNaming", "MagicNumber")
+@file:Suppress("PackageNaming", "MagicNumber", "NewLineAtEndOfFile")
 package com.joseph.muchori.composable_example.ui.theme
 
 import androidx.compose.ui.graphics.Color

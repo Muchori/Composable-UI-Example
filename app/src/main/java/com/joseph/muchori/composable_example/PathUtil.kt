@@ -1,4 +1,4 @@
-@file:Suppress("PackageNaming")
+@file:Suppress("PackageNaming", "NewLineAtEndOfFile")
 package com.joseph.muchori.composable_example
 
 import androidx.compose.ui.geometry.Offset
