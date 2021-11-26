@@ -33,6 +33,24 @@ import com.joseph.muchori.composable_example.BottomMenuContent
 import com.joseph.muchori.composable_example.Feature
 import com.joseph.muchori.composable_example.R
 import com.joseph.muchori.composable_example.standardQuadFromTo
+import com.joseph.muchori.composable_example.ui.theme.AquaBlue
+import com.joseph.muchori.composable_example.ui.theme.Beige1
+import com.joseph.muchori.composable_example.ui.theme.Beige2
+import com.joseph.muchori.composable_example.ui.theme.Beige3
+import com.joseph.muchori.composable_example.ui.theme.BlueViolet1
+import com.joseph.muchori.composable_example.ui.theme.BlueViolet2
+import com.joseph.muchori.composable_example.ui.theme.BlueViolet3
+import com.joseph.muchori.composable_example.ui.theme.ButtonBlue
+import com.joseph.muchori.composable_example.ui.theme.DarkerButtonBlue
+import com.joseph.muchori.composable_example.ui.theme.DeepBlue
+import com.joseph.muchori.composable_example.ui.theme.LightGreen1
+import com.joseph.muchori.composable_example.ui.theme.LightGreen2
+import com.joseph.muchori.composable_example.ui.theme.LightGreen3
+import com.joseph.muchori.composable_example.ui.theme.LightRed
+import com.joseph.muchori.composable_example.ui.theme.OrangeYellow1
+import com.joseph.muchori.composable_example.ui.theme.OrangeYellow2
+import com.joseph.muchori.composable_example.ui.theme.OrangeYellow3
+import com.joseph.muchori.composable_example.ui.theme.TextWhite
 
 @ExperimentalFoundationApi
 @Composable
