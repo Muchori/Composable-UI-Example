@@ -1,4 +1,4 @@
-@file:Suppress("PackageNaming", "UnusedPrivateMember")
+@file:Suppress("PackageNaming", "UnusedPrivateMember", "NewLineAtEndOfFile")
 package com.joseph.muchori.composable_example.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
