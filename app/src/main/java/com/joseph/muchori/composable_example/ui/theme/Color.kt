@@ -1,3 +1,4 @@
+@file:Suppress("PackageNaming", "MagicNumber")
 package com.joseph.muchori.composable_example.ui.theme
 
 import androidx.compose.ui.graphics.Color

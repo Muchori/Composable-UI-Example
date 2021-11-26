@@ -1,3 +1,4 @@
+@file:Suppress("PackageNaming")
 package com.joseph.muchori.composable_example.ui
 
 import androidx.compose.foundation.Canvas
