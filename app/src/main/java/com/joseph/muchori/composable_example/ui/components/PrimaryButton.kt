@@ -20,29 +20,29 @@ import com.joseph.muchori.composable_example.ui.theme.ButtonShape
 import com.joseph.muchori.composable_example.ui.theme.Composable_ExampleTheme
 
 @Composable
-fun PrimaryButton (
+fun PrimaryButton(
     text: String,
-    onClick: ()->Unit,
+    onClick: () -> Unit,
     modifier: Modifier = Modifier,
     backgroundColor: Color = MaterialTheme.colors.primary,
-){
+) {
     val buttonColors = buttonColors(
         backgroundColor = backgroundColor,
     )
 
-   Button(
-       onClick = onClick,
-       colors = buttonColors,
-       shape = ButtonShape,
-       modifier = modifier
-           .height(dimensionResource(id = R.dimen.button_height))
-           .fillMaxWidth(),
+    Button(
+        onClick = onClick,
+        colors = buttonColors,
+        shape = ButtonShape,
+        modifier = modifier
+            .height(dimensionResource(id = R.dimen.button_height))
+            .fillMaxWidth(),
 
-   ) {
-       Text(
-           text = text.toUpperCase(Locale.current),
-       )
-   }
+    ) {
+        Text(
+            text = text.toUpperCase(Locale.current),
+        )
+    }
 }
 
 @Preview(

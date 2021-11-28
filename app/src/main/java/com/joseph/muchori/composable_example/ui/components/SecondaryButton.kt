@@ -20,12 +20,12 @@ import com.joseph.muchori.composable_example.ui.theme.ButtonShape
 import com.joseph.muchori.composable_example.ui.theme.Composable_ExampleTheme
 
 @Composable
-fun SecondaryButton (
+fun SecondaryButton(
     text: String,
-    onClick: ()->Unit,
+    onClick: () -> Unit,
     modifier: Modifier = Modifier,
-    textColor : Color = MaterialTheme.colors.primary,
-){
+    textColor: Color = MaterialTheme.colors.primary,
+) {
 
     TextButton(
         onClick = onClick,
@@ -34,7 +34,7 @@ fun SecondaryButton (
             .height(dimensionResource(id = R.dimen.button_height))
             .fillMaxWidth(),
 
-        ) {
+    ) {
         Text(
             text = text.toUpperCase(Locale.current),
             color = textColor,
@@ -56,7 +56,7 @@ fun SecondaryButton (
 @Suppress("UnusedPrivateMember")
 private fun SecondaryButtonPreview() {
     Composable_ExampleTheme() {
-        Surface{
+        Surface {
             SecondaryButton(
                 text = "Secondary Button",
                 onClick = {},
