@@ -25,9 +25,7 @@ import com.joseph.muchori.composable_example.ui.theme.Composable_ExampleTheme
  * @param [text] The text inside the button.
  * @param [onClick] A callback invoked when the user clicks the button.
  * @param [modifier] An optional [Modifier] to configure this component.
-  */
-
-
+ */
 
 @Composable
 fun PrimaryButton(
@@ -69,7 +67,7 @@ fun PrimaryButton(
 @Suppress("UnusedPrivateMember")
 private fun PrimaryButtonPreview() {
     Composable_ExampleTheme() {
-        Surface{
+        Surface {
             PrimaryButton(
                 text = "Primary Button",
                 onClick = {},

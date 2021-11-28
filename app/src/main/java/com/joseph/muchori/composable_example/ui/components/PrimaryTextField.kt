@@ -3,7 +3,6 @@ package com.joseph.muchori.composable_example.ui.components
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.OutlinedTextField
@@ -64,7 +63,7 @@ fun PrimaryTextField(
 @Suppress("UnusedPrivateMember")
 private fun EmptyPrimaryTextFieldPreview() {
     Composable_ExampleTheme() {
-        Surface{
+        Surface {
             PrimaryTextField(
                 text = "",
                 onTextChanged = {},
@@ -86,7 +85,7 @@ private fun EmptyPrimaryTextFieldPreview() {
 @Suppress("UnusedPrivateMember")
 private fun FilledPrimaryTextFieldPreview() {
     Composable_ExampleTheme() {
-        Surface{
+        Surface {
             PrimaryTextField(
                 text = "Composable text field",
                 onTextChanged = {},
@@ -95,5 +94,3 @@ private fun FilledPrimaryTextFieldPreview() {
         }
     }
 }
-
-
