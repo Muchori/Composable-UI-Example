@@ -19,6 +19,13 @@ import com.joseph.muchori.composable_example.R
 import com.joseph.muchori.composable_example.ui.theme.ButtonShape
 import com.joseph.muchori.composable_example.ui.theme.Composable_ExampleTheme
 
+/**
+ * This is a custom [TextButton] that provides the shape and style expected in the app.
+ * @param [text] The text inside the button.
+ * @param [onClick] A callback invoked when the user clicks the button.
+ * @param [modifier] An optional [Modifier] to configure this component.
+ */
+
 @Composable
 fun SecondaryButton(
     text: String,
@@ -43,12 +50,12 @@ fun SecondaryButton(
 }
 
 @Preview(
-    name = "Night Mode -Empty",
+    name = "Night Mode",
     uiMode = Configuration.UI_MODE_NIGHT_YES,
 )
 
 @Preview(
-    name = "Day Mode -Empty",
+    name = "Day Mode",
     uiMode = Configuration.UI_MODE_NIGHT_NO,
 )
 
