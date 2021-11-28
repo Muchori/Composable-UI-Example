@@ -1,3 +1,4 @@
+@file:Suppress("PackageNaming", "NewLineAtEndOfFile")
 package com.joseph.muchori.composable_example.ui.components
 
 import android.content.res.Configuration
@@ -15,7 +16,6 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.text.intl.Locale
 import androidx.compose.ui.text.toUpperCase
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import com.joseph.muchori.composable_example.R
 import com.joseph.muchori.composable_example.ui.theme.ButtonShape
 import com.joseph.muchori.composable_example.ui.theme.Composable_ExampleTheme
