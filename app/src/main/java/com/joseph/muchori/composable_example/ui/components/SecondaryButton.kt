@@ -4,10 +4,10 @@ package com.joseph.muchori.composable_example.ui.components
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.material.Button
-import androidx.compose.material.ButtonDefaults.buttonColors
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Surface
 import androidx.compose.material.Text
+import androidx.compose.material.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -20,29 +20,26 @@ import com.joseph.muchori.composable_example.ui.theme.ButtonShape
 import com.joseph.muchori.composable_example.ui.theme.Composable_ExampleTheme
 
 @Composable
-fun PrimaryButton (
+fun SecondaryButton (
     text: String,
     onClick: ()->Unit,
     modifier: Modifier = Modifier,
-    backgroundColor: Color = MaterialTheme.colors.primary,
+    textColor : Color = MaterialTheme.colors.primary,
 ){
-    val buttonColors = buttonColors(
-        backgroundColor = backgroundColor,
-    )
 
-   Button(
-       onClick = onClick,
-       colors = buttonColors,
-       shape = ButtonShape,
-       modifier = modifier
-           .height(dimensionResource(id = R.dimen.button_height))
-           .fillMaxWidth(),
+    TextButton(
+        onClick = onClick,
+        shape = ButtonShape,
+        modifier = modifier
+            .height(dimensionResource(id = R.dimen.button_height))
+            .fillMaxWidth(),
 
-   ) {
-       Text(
-           text = text.toUpperCase(Locale.current),
-       )
-   }
+        ) {
+        Text(
+            text = text.toUpperCase(Locale.current),
+            color = textColor,
+        )
+    }
 }
 
 @Preview(
@@ -57,11 +54,13 @@ fun PrimaryButton (
 
 @Composable
 @Suppress("UnusedPrivateMember")
-private fun PrimaryButtonPreview() {
+private fun SecondaryButtonPreview() {
     Composable_ExampleTheme() {
-        PrimaryButton(
-            text = "Primary Button",
-            onClick = {},
-        )
+        Surface{
+            SecondaryButton(
+                text = "Secondary Button",
+                onClick = {},
+            )
+        }
     }
 }
