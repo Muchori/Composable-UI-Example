@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults.buttonColors
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -18,6 +19,15 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.joseph.muchori.composable_example.R
 import com.joseph.muchori.composable_example.ui.theme.ButtonShape
 import com.joseph.muchori.composable_example.ui.theme.Composable_ExampleTheme
+
+/**
+ * This is a custom [Button] that provides the shape and style expected in the app.
+ * @param [text] The text inside the button.
+ * @param [onClick] A callback invoked when the user clicks the button.
+ * @param [modifier] An optional [Modifier] to configure this component.
+  */
+
+
 
 @Composable
 fun PrimaryButton(
@@ -46,12 +56,12 @@ fun PrimaryButton(
 }
 
 @Preview(
-    name = "Night Mode -Empty",
+    name = "Night Mode",
     uiMode = Configuration.UI_MODE_NIGHT_YES,
 )
 
 @Preview(
-    name = "Day Mode -Empty",
+    name = "Day Mode",
     uiMode = Configuration.UI_MODE_NIGHT_NO,
 )
 
@@ -59,9 +69,11 @@ fun PrimaryButton(
 @Suppress("UnusedPrivateMember")
 private fun PrimaryButtonPreview() {
     Composable_ExampleTheme() {
-        PrimaryButton(
-            text = "Primary Button",
-            onClick = {},
-        )
+        Surface{
+            PrimaryButton(
+                text = "Primary Button",
+                onClick = {},
+            )
+        }
     }
 }
