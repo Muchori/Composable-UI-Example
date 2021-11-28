@@ -17,6 +17,7 @@ import androidx.compose.ui.text.toUpperCase
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.joseph.muchori.composable_example.R
+import com.joseph.muchori.composable_example.ui.theme.ButtonShape
 import com.joseph.muchori.composable_example.ui.theme.Composable_ExampleTheme
 
 @Composable
@@ -33,7 +34,7 @@ fun PrimaryButton (
    Button(
        onClick = onClick,
        colors = buttonColors,
-       shape = RoundedCornerShape(50),
+       shape = ButtonShape,
        modifier = modifier
            .height(dimensionResource(id = R.dimen.button_height))
            .fillMaxWidth(),
