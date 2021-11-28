@@ -56,6 +56,12 @@ val Typography = Typography(
         fontFamily = gothicA1,
         fontWeight = FontWeight.Bold,
         fontSize = 13.sp,
+    ),
+    caption = TextStyle(
+        color = TextWhite,
+        fontFamily = gothicA1,
+        fontWeight = FontWeight.Normal,
+        fontSize = 12.sp,
     )
 
 )
