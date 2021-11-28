@@ -7,6 +7,8 @@ import androidx.compose.runtime.Composable
 
 @Composable
 fun Composable_ExampleTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {
+    val colors = lightColorPalette
+
     MaterialTheme(
         typography = Typography,
         shapes = Shapes,

@@ -1,6 +1,8 @@
 @file:Suppress("PackageNaming", "MagicNumber", "NewLineAtEndOfFile")
 package com.joseph.muchori.composable_example.ui.theme
 
+import android.annotation.SuppressLint
+import androidx.compose.material.lightColors
 import androidx.compose.ui.graphics.Color
 
 val TextWhite = Color(0xffeeeeee)
@@ -21,3 +23,17 @@ val LightGreen3 = Color(0xff11d79b)
 val BlueViolet1 = Color(0xffaeb4fd)
 val BlueViolet2 = Color(0xff9fa5fe)
 val BlueViolet3 = Color(0xff8f98fd)
+val LightViolet = Color(0xFFB12F7B)
+
+@SuppressLint("ConflictingOnColor")
+val lightColorPalette = lightColors(
+    primary = ButtonBlue,
+    onPrimary = Color.White,
+    secondary = OrangeYellow2,
+    onSecondary = Color.White,
+    background = ButtonBlue,
+    onBackground = DarkerButtonBlue,
+    surface = Color.White,
+    onSurface = ButtonBlue
+
+)
